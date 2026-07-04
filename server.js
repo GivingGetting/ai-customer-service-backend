@@ -28,7 +28,7 @@ const MODEL    = process.env.MODEL || "gemini-2.5-flash-lite";
 const PORT     = process.env.PORT || 8787;
 
 // 允许哪个前端域名调用（上线后改成你的 GitHub Pages 域名，更安全）
-const ALLOW_ORIGIN = process.env.ALLOW_ORIGIN || "*";
+const ALLOW_ORIGIN = process.env.ALLOW_ORIGIN || "https://givinggetting.github.io";
 
 function cors(res) {
   res.setHeader("Access-Control-Allow-Origin", ALLOW_ORIGIN);
